@@ -221,7 +221,25 @@ public class FrmPrincipal extends javax.swing.JFrame
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
         // TODO add your handling code here:
+         int aux;
+        Nodo p;
         
+        aux = Integer.parseInt(txtNumero.getText());
+        p = listaDeCanales.buscar(aux);
+        
+        if(p != null)
+        {
+          p.info=Integer.parseInt(txtReemplazo.getText());
+                  JOptionPane.showMessageDialog(this, "Canal Modificado");
+               }
+          else
+            JOptionPane.showMessageDialog(this, "No está en la Lista");
+                                 
+                       
+
+        
+                                          
+
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
@@ -241,7 +259,8 @@ public class FrmPrincipal extends javax.swing.JFrame
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnOrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenarActionPerformed
-        // TODO add your handling code here:
+        listaDeCanales.ordenar();
+        JOptionPane.showMessageDialog(this,"canal ordenado0");
         
     }//GEN-LAST:event_btnOrdenarActionPerformed
 

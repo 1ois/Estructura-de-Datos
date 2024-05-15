@@ -87,7 +87,7 @@ public class ListaSimpleNros
         }
     }
     
-    public void ordenar()
+    public void ordenar()// METODO DE BURBUJA PERO PARA UNA LISTA
     {
         Nodo p, q;
         double tempo;

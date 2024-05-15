@@ -1,0 +1,75 @@
+
+Eliminar Primer Elemento
+inicio=inicio.sgte //java y c#
+
+------------------------
+p=inicio;
+inicio = p.sgte;
+delete p;
+// en java en c# no hay una instruccion delete
+
+-------------------------------------------
+Retornar al anterior
+
+actual =buscar(40);
+
+p=inicio;
+while(p.sgte !=actual)
+p=p.sgte;
+
+
+-----------------------------
+Eliminar ultimo Elemento
+
+
+actual=buscar(40);
+anterior=retornarAnterior(Actual)
+anterior.sgte=null
+-----------------------------
+Eliminar entre 2 Nodos
+
+
+actual=buscar(21);
+anterior=retornarAnterior(Actual);
+anterior.sgte=actual.sgte;
+
+
+//Este metodo es igual al ultimo elemento por ende solo hay 2 metodos
+//
+
+--------------------------
+La busqueda y ordenamiento  resulta mas eficiente 
+en un Vector
+-------------------------------
+INSERCION
+(LISTAS)
+
+
+nuevo = new Nodo();
+nuevo.info=40
+nuevo.sgte=inicio
+inicio=nuevo;
+//es igual al metodo adicionar del vector pero no le agregamos un if
+----------------------------
+INSERCION
+insertar el canal 40 despues del canal 42
+
+
+(Entre dos Nodos)
+actual= buscar(42)
+nuevo =new Nodo()
+
+nuevo.info=40;
+nuevo.sgte=actual.sgte;
+actual.sgte=nuevo;
+--------------------------
+INSERCCION
+Insertar el canal 40 antes del canal 21
+
+
+actual= buscar(21)
+nuevo=new Nodo()
+nuevo.info=40
+nuevo.sgte=actual
+anterior=retornarAnterior(Actual)
+anterior.sgte=nuevo
