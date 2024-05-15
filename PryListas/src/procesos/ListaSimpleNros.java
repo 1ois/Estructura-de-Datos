@@ -10,7 +10,8 @@ public class ListaSimpleNros {
         
     }
     
-    public Nodo retornarUltimo()
+    public Nodo retornarUltimo()// Devuelve la direeccion de la memoria
+                                //devielve la ultima direccion de la lista
     {
              Nodo p= inicio;
         

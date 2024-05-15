@@ -1,0 +1,43 @@
+
+Eliminar Primer Elemento
+inicio=inicio.sgte //java y c#
+
+------------------------
+p=inicio;
+inicio = p.sgte;
+delete p;
+// en java en c# no hay una instruccion delete
+
+-------------------------------------------
+Retornar al anterior
+
+actual =buscar(40);
+
+p=inicio;
+while(p.sgte !=actual)
+p=p.sgte;
+
+
+-----------------------------
+Eliminar ultimo Elemento
+
+
+actual=buscar(40);
+anterior=retornarAnterior(Actual)
+anterior.sgte=null
+-----------------------------
+Eliminar entre 2 Nodos
+
+
+actual=buscar(21);
+anterior=retornarAnterior(Actual);
+anterior.sgte=actual.sgte;
+
+
+//Este metodo es igual al ultimo elemento por ende solo hay 2 metodos
+//
+
+
+
+
+
