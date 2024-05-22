@@ -87,7 +87,7 @@ public class ListaSimpleNros
         }
     }
     
-    public void ordenar()// METODO DE BURBUJA PERO PARA UNA LISTA
+    public void ordenar()
     {
         Nodo p, q;
         double tempo;
@@ -111,10 +111,7 @@ public class ListaSimpleNros
     }
     
     public void insertarAlInicio(double dato)
-    {          Nodo nuevo;
-            nuevo= new Nodo();
-            nuevo.info=dato;
-            nuevo.sgte=inicio;
-             inicio=nuevo;
+    {
+        // implementar
     }
 }

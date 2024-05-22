@@ -19,15 +19,15 @@ public class FrmPrincipal extends javax.swing.JFrame
     public void limpiar()
     {
         txtReemplazo.setText("");
-        txtNumero.setText("");
-        txtNumero.requestFocus();
+        txtNro.setText("");
+        txtNro.requestFocus();
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtNumero = new javax.swing.JTextField();
+        txtNro = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txaResultado = new javax.swing.JTextArea();
@@ -119,7 +119,7 @@ public class FrmPrincipal extends javax.swing.JFrame
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtNumero, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtNro, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -147,7 +147,7 @@ public class FrmPrincipal extends javax.swing.JFrame
             .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtNumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
                     .addComponent(txtReemplazo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
@@ -180,7 +180,7 @@ public class FrmPrincipal extends javax.swing.JFrame
         // TODO add your handling code here:
         int aux;
         
-        aux = Integer.parseInt(txtNumero.getText());
+        aux = Integer.parseInt(txtNro.getText());
         listaDeCanales.adicionar(aux);
         
         limpiar();
@@ -210,7 +210,7 @@ public class FrmPrincipal extends javax.swing.JFrame
         int aux;
         Nodo p;
         
-        aux = Integer.parseInt(txtNumero.getText());
+        aux = Integer.parseInt(txtNro.getText());
         p = listaDeCanales.buscar(aux);
         
         if(p != null)
@@ -221,54 +221,21 @@ public class FrmPrincipal extends javax.swing.JFrame
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
         // TODO add your handling code here:
-         int aux;
-        Nodo p;
         
-        aux = Integer.parseInt(txtNumero.getText());
-        p = listaDeCanales.buscar(aux);
-        
-        if(p != null)
-        {
-          p.info=Integer.parseInt(txtReemplazo.getText());
-                  JOptionPane.showMessageDialog(this, "Canal Modificado");
-               }
-          else
-            JOptionPane.showMessageDialog(this, "No está en la Lista");
-                                 
-                       
-
-        
-                                          
-
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
-            
-     int aux;
-     Nodo p;
-     aux=Integer.parseInt(txtNumero.getText());
-     p=listaDeCanales.buscar(aux);
-     if(p!=null)
-     {
-         listaDeCanales.eliminar(p);
-         JOptionPane.showMessageDialog(this,"Canales elimiando");
-         
-     }else{
-         JOptionPane.showMessageDialog(this,"Canal no está en la lista");
-     }
+        // TODO add your handling code here:
+        
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnOrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenarActionPerformed
-        listaDeCanales.ordenar();
-        JOptionPane.showMessageDialog(this,"canal ordenado0");
+        // TODO add your handling code here:
         
     }//GEN-LAST:event_btnOrdenarActionPerformed
 
     private void btnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarActionPerformed
-  int aux;
-  aux=Integer.parseInt(txtNumero.getText());
-  listaDeCanales.insertarAlInicio(aux);
-  limpiar();
+        // TODO add your handling code here:
         
     }//GEN-LAST:event_btnInsertarActionPerformed
     
@@ -317,7 +284,7 @@ public class FrmPrincipal extends javax.swing.JFrame
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea txaResultado;
-    private javax.swing.JTextField txtNumero;
+    private javax.swing.JTextField txtNro;
     private javax.swing.JTextField txtReemplazo;
     // End of variables declaration//GEN-END:variables
 }
