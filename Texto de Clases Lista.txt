@@ -87,3 +87,32 @@ bucar(42);
 modificar(24,1,3);
 
 Se tienen agregar o eliminar a toda una fila o todo una columna
+   
+ int matriculados[][]={{16,24,20},{24,30,26}};
+  int fil,col;
+    public FrmPrincipal() {
+        
+        initComponents();
+        fil=matriculados.length; //numero de filas 
+        col=matriculados[0].length; // numero de columnas
+    }
+
+por convecion se pone 0 pero tambien puede ir 1 ,2 o otro numero
+       
+
+------------------------------------------------------
+
+Uso la variable acumulador
+	int i,j;
+        int acum;
+        txaResultado.setText(""); // PRAR QUE  SE REFRESQUE LOS DATOS Y NO SE REPITAN
+        
+        for(i=0;i<fil;i++){
+              acum=0;
+              for(j=0;j<col;j++){
+                   acum=matriculados[i][j]+acum;
+                
+              }
+              txaPorTurno.append(acum +"\n\n");     
+        txaResultado.append("\n\n"); 
+        }
