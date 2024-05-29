@@ -73,3 +73,17 @@ nuevo.info=40
 nuevo.sgte=actual
 anterior=retornarAnterior(Actual)
 anterior.sgte=nuevo
+
+
+------------------------
+Clase bidedimensional
+Matriz (Clase 4)
+Sino se especifica se asume por filas 
+(defaul)
+ademas , dependera del n°filas n°columnas
+
+bucar(42);
+
+modificar(24,1,3);
+
+Se tienen agregar o eliminar a toda una fila o todo una columna
