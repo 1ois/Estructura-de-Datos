@@ -116,3 +116,36 @@ Uso la variable acumulador
               txaPorTurno.append(acum +"\n\n");     
         txaResultado.append("\n\n"); 
         }
+---------------------------------------------
+
+
+PILAS
+
+n -> cantidad de elementos
+cima -> posicion que se encuentra el ultimo valor 
+de la pila
+-----------------------------------------
+SI n=5 y  cima =2
+
+y le quitamos los datos que tiene
+entonces la cima =-1
+(2-3)
+-------------
+cuando "n" este llena , el valor de  la cima es "n-1"
+-----------
+En vectores declaramos tipo double para reutilizar en otros proyctos
+-----------------------------------------------------------
+        for (i = n - 1; i > pilaDeCanales.getCima(); i--)
+      
+            txaResultado.append("\n");
+Poner los datos al final de la pila
+-------------------------------------
+(Tarea
+utilizar el algoritmo dentro de una pila"
+transformar infija a posfija )
+
+--------------------------
+Metodo de STRIGN
+matches() sirbe para averiguar si los caracteres corresponde a un numero o letra
+
+
