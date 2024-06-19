@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/procesos/ColaVectorNros.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>36</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/AED/Semana%2010/Programas/PryColaCanalesNros/src/ventanas/FrmPrincipal.java</file>
-            <file>file:/D:/AED/Semana%2010/Programas/PryColaCanalesNros/src/procesos/ColaVectorNros.java</file>
+            <file>file:/D:/Algoritmo%20y%20estructura/Semana%2010-20240612/PryColaCanalesNros/PryColaCanalesNros/src/ventanas/FrmPrincipal.java</file>
         </group>
     </open-files>
 </project-private>

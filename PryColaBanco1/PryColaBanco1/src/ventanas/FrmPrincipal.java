@@ -1,6 +1,8 @@
 
 package ventanas;
-
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import procesos.ColaVectorCaracteres;
 import javax.swing.JOptionPane;
 
@@ -41,6 +43,7 @@ public class FrmPrincipal extends javax.swing.JFrame
                 txaResultadoUser.append(colaDeClientes.getElemento(i) + "\n");
         }
     }
+ 
    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -170,8 +173,9 @@ public class FrmPrincipal extends javax.swing.JFrame
 
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
         // TODO add your handling code here:
+        
         String aux;
-
+        
         if ((colaDeClientes.getFrente() == 0 && colaDeClientes.getFinal() == n - 1) ||
             (colaDeClientes.getFrente() == colaDeClientes.getFinal() + 1))
             JOptionPane.showMessageDialog(this, "La Cola está llena");
@@ -183,6 +187,7 @@ public class FrmPrincipal extends javax.swing.JFrame
           
         }
         limpiar();
+         
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
     private void btnAtenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtenderActionPerformed

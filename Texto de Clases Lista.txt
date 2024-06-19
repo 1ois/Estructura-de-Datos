@@ -189,7 +189,29 @@ for(i=frente;i<=final; frente++)
 for(i=frente,i<=n-1;i=i+1) -- primero recorremeos este vector " no estan anidadas"
 
 for(i=0;i<=final;i++)
-
+------------------------------------------
+INTERATIVIDAD
+suma(n)= n (n-1)+(n-2)....+2+1
+sum(n) = n +sum(n-1)
  
+
+public int sum(int i) //metodo recusivo
+{ if( i<=0)
+return 0;
+else
+return i+ sumar(i+1);
+------------------------------------
+sumar(3)=3 sumar(2)
+	2 + sumar(1)
+	    1+ sumar(0)
+		0
+PRIMERO EMPIEZA POR SUMA(0) Y TERMINAR POR SUMAR(3);
+
+---------------------------
+mcd(18,12)= mcd(18-12,12)
+	mcd(6,12)=mcd(6,12-6)
+		mcd(6,6)=mcd(6-6,6)
+			mcd(0,6)=6
+
 
 
