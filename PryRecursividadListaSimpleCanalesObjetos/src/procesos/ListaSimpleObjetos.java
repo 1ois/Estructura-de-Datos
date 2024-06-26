@@ -1,13 +1,15 @@
 
 package procesos;
 
-public class ListaSimpleCaracteres
+import datos.CanalTV;
+
+public class ListaSimpleObjetos
 {
     public Nodo inicio;
-    
-    public ListaSimpleCaracteres()
+
+    public ListaSimpleObjetos()
     {
-        inicio = null;
+       inicio = null;
     }
 
     public Nodo retornarUltimo()
@@ -30,11 +32,11 @@ public class ListaSimpleCaracteres
         return p;
     }
 
-    public void adicionar(String dato)
+    public void adicionar(CanalTV dato)
     {
         Nodo nuevo, ultimo;
-        nuevo = new Nodo();
 
+        nuevo = new Nodo();
         nuevo.info = dato;
         nuevo.sgte = null;
 
@@ -47,24 +49,22 @@ public class ListaSimpleCaracteres
         }
     }
 
-    public int contar() // conteo iterativo
+    public Nodo buscarPorNro(int dato)  // búsqueda iterativa
     {
-        int conta = 0;
         Nodo p = inicio;
 
         while (p != null)
         {
-            conta = conta + 1;
+            if (p.info.nro == dato)
+                return p;
             p = p.sgte;
         }
-        return conta;
+        return null;
     }
-    
-    public int contar(Nodo p)   // conteo recursivo
+        
+    public Nodo buscarPorNro(Nodo p, int dato)  // búsqueda recursiva
     {
-        if(p==null)
-            return 0;
-        else return 1 + contar(p.sgte);
-             
+        // implementar
+        return null;
     }
 }
