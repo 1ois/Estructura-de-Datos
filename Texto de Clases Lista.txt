@@ -213,5 +213,32 @@ mcd(18,12)= mcd(18-12,12)
 		mcd(6,6)=mcd(6-6,6)
 			mcd(0,6)=6
 
+----------------------------------------------
+Pasar 3 discos de A a " C "
+
+1-Mover 2 discos del poste A al poste B
+2.Mover el disco de mayor diametro de A a C
+3.Mover 2 discos del poste B al poste C
+
+Pasar 4 discos de A a C
+1.Mover 3 discos del poste A al poste B
+2.Mover el disco de mayor diametro de A a C
+3.Mover 3  discos del poste B al poste C
+
+Formula para hallar el numero de movimientos 2^n -1
+
+
+    public void moverDiscos(int nro, char origen, char destino, char tempo)
+    {
+        if(nro>0 )
+        {
+           moverDiscos(nro-1,origen,tempo,destino);
+           txaResultado.append(origen+"-->"+ destino +"\n");
+           moverDiscos(nro-1,tempo,destino,origen); 
+           
+        }
+    }
+    
+
 
 

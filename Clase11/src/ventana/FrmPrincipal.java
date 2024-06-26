@@ -22,11 +22,27 @@ public class FrmPrincipal extends javax.swing.JFrame {
                  return mcd(a,b-a);}
       }
       
-      
+     
       
   
 }
+        
+ public int mcd1(int a, int b) {
+    switch (true) {
+        case a == 0:
+            return b;
+        case b == 0:
+            return a;
+        default:
+            if (a >= b) {
+                return mcd(a - b, b);
+            } else {
+                return mcd(a, b - a);
+            }
+    }
+}
     
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
