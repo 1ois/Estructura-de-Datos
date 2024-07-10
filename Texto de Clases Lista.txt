@@ -239,6 +239,45 @@ Formula para hallar el numero de movimientos 2^n -1
         }
     }
     
+///////////////Usuario: 9142805cg
+
+Contraseña: 69"&n8eF?h]n"@Jk
+ARBOLES ORDENDOS
+se asgrega de izquierda a derecha va  
+ndepender de si es pre-orden,in-orden.pos-orden;
+"el nodo actual su proposito es encontrar al nodo podra "
+- cuando invocamos por primera vez al metodo arbolNumeros  le llamamo alas raiz porque no tenemos una referencia de ello;
+
+p = raiz;				//p.info =52
+44=p.info?
+44<p.info?
+
+44=p.info?			//p.info=36	
+44<p.info
 
 
+44=p.info			// p.info=
+
+////////////////////
+buscar el canal
+if (dato==p.info)
+return p;
+else
+if( dato< p.info)
+ p=p.izq;
+else
+p=p.der;
+
+RECUERDEN MUCHACHOS MINIMO 10
+QUE GENEROSO!!!!!
+No se olviden hacerme recordar entregar
+EP4
+1 color el correspondiente grafo
+2 solo colocar las posibles ruta  , colocar el kilometraje
+3 ruta optima .No colocar el kilometraje total o acumulado
+4correcion es no dirigido btngrabaactionreform
+6 digido ala pregunta binaria
+7cuantas comparaciones hay que hacer para encontrar 
+7.1 apesar que no se encuntre el numero en la grafica
+8 es algo muy similar a pre lineas 
 
