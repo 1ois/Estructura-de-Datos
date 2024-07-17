@@ -281,3 +281,17 @@ EP4
 7.1 apesar que no se encuntre el numero en la grafica
 8 es algo muy similar a pre lineas 
 
+
+Arboles Binarios Ordenados Eliminacion
+|Garbash colette|
+
+//////////////////
+Ejemplo 
+ELIMINACON CASO 3+
+SOLO SE INTERCAMBIA CON EL SUCESOR IN-ORDEN,
+
+52 36 68 24 , 72
+Buscar 24: 3 comparaciones 0 hijos
+buscar 68: 2 comparaciones , 1 hijo
+buscar 52: 1 comparacion 2 hijos
+

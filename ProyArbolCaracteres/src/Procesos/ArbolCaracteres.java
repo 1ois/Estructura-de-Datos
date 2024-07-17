@@ -4,14 +4,15 @@ package Procesos;
 
 public class ArbolCaracteres {
     
-       public Nodo raiz;
-    public ArbolCaracteres(){raiz = null;}
+      private Nodos raiz;
+    public ArbolCaracteres()
+    {raiz = null;}
    
-    public void insertar(double dato)
+    public void insertar(String dato)
     {
-        Nodo nuevo, actual, padre = null;
+        Nodos nuevo, actual, padre = null;
 
-        nuevo = new Nodo();
+        nuevo = new Nodos();
             
         nuevo.info = dato;
         nuevo.izq  = null;
@@ -40,11 +41,11 @@ public class ArbolCaracteres {
                 padre.der = nuevo;
         }
     }
-    public Nodo buscar(double dato){
-    Nodo actual=raiz;
+    public Nodos buscar(String dato){
+    Nodos actual=raiz;
     //Mientras  que  p sea diferetne que null
     while (actual!=null){
-        if(dato==actual.info){
+        if(dato.equals(actual.info)){
         
             return actual;
         }
